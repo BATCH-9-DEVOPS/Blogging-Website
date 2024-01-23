@@ -76,6 +76,9 @@
         <label for="signupPassword">Password:</label>
         <input type="password" id="signupPassword" name="signupPassword" required>
 
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
         <button type="button" onclick="signUp()">Sign Up</button>
         <p>Already have an account? <a href="#" onclick="showSignInForm()">Sign In</a></p>
     </form>
@@ -114,6 +117,14 @@
         }
 
         function signUp() {
+            var password = document.getElementById('signupPassword').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please re-enter.');
+                return;
+            }
+
             // Implement sign-up logic here
             alert('Sign Up button clicked');
         }
