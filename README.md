@@ -14,7 +14,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
 * Actor: User without Email ID
 * Pre Condition:
 
-1. User should have a working email-id which is not already registered with Blogging website.
+1. User should have a working email-id which is not already registered with Blog platform.
 
 * Input:
 
@@ -38,7 +38,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
 * Exceptions:
 
 1. Registration page re-appears with appropriate message if user enters invalid name or invalid email-ID or invalid password.
-2. Registration page re-appears with appropriate message if the email-ID is already registered with Blogging website.
+2. Registration page re-appears with appropriate message if the email-ID is already registered with Blog platform.
 3. Registration page shows "resend" button, in case the activation code is not entered in the first 5 minutes after the mail has been sent.
 4. Registration page will not show any special message if the email-ID is not reachable. It just prompts for activation code, as usual.
 
@@ -48,7 +48,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
 
 * Pre Condition:
 
-1. User should have a registered Email ID and password with Blogging website.
+1. User should have a registered Email ID and password with Blog platform.
 
 * Input:
 
@@ -109,7 +109,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
  
 * Pre Condition:
 
-1. User should have an active Email ID with Blogging website.
+1. User should have an active Email ID with Blog platform.
 
 * Input:
 
@@ -140,7 +140,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
 
 * Pre Condition:
 
-1. User should have logged into Blogging website
+1. User should have logged into Blog platform
 
 * Input:
 
@@ -217,7 +217,7 @@ Authentication Service is part of Blog Platform. It is built around [Blogger Cog
 
 * Post Condition:
 
-1. User should not be able to login to Glarimy Cloud with activating the ID again.
+1. User should not be able to login to blog platform with activating the ID again.
 2. Back button or bookmarks fail to open any of the login-protected pages of the web app
 
 * Exceptions:
