@@ -30,7 +30,7 @@ const App = () => {
     setForgotPasswordData({ ...forgotPasswordData, [name]: value });
   };
   const signIn = () => {
-    // Check if username and password are filled
+    // Check if username password are filled
     if (!signInData.username || !signInData.password) {
       alert('Please fill in all fields!');
       return;
